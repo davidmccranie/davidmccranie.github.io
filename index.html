@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>FL WC Settlement Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" <integri>
+        < /integri>ty="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin = "anonymous" >
+    </script>
+    <script type="text/javascript" src="script.js">
+        < script type = "text/javascript"
+        src = "script.js" >
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h2>FL WC Settlement Calculator</h2>
+        <form class="" action="index.html" onsubmit="return calculateSettlement()">
+            <fieldset>
+                <legend>Settlement</legend>
+                <label for="settlementAmount">Amount: $</label>
+                <input type="text" id="settlementAmount" autofocus placeholder="no $ signs or commas" required autocomplete="off">
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Attorney's fees</legend>
+                <p>
+                    <label>
+    <input type="radio" name="attFees" value="plus-a-fee" id="plus-a-fee" required>
+    Plus a fee</label>
+                    <br>
+                    <label>
+    <input type="radio" name="attFees" value="inclusive-of-fees" id="inclusive-of-fees">
+    Inclusive of fees</label>
+                    <br>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Costs</legend>
+                Amount: $<input type="text" name="" value="" id="costs" placeholder="no $ signs or commas" required autocomplete="off">
+                <p>
+                    <label>
+    <input type="radio" name="costs" value="claimant-paid" id="claimant-paid" required>
+    Claimant-paid</label>
+                    <br>
+                    <label>
+    <input type="radio" name="costs" value="ec-paid" id="ec-paid">
+    E/C-paid</label>
+                    <br>
+                </p>
+            </fieldset>
+
+            <fieldset id="results">
+                <legend>Results</legend>
+                <p>The amount of the fee is: <span id="amountOfFee"></span></p>
+                <p>The total cost to the E/C is: <span id="totalCost"></span></p>
+                <p>The net settlement to the Claimant is: <span id="netToClaimant"></span></p>
+            </fieldset>
+
+            <p>
+                <button>Click to calculate</button>
+                <input type="reset" id="reset" onclick="closeResults()">
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>

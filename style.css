@@ -1,0 +1,66 @@
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #1d1d1d;
+    background-color:
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+span {
+    color: red;
+    font-weight: 700;
+}
+
+h2 {
+    color: #8b181b;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+button {
+    background: #8b181b;
+    font-family: "Montserrat";
+    font-size: 1em;
+    color: white;
+    border-radius: 5px;
+    height: 38px;
+}
+
+button:hover {
+    background: #aa1e21;
+    cursor: pointer;
+}
+
+input {
+    font-family: Roboto;
+    font-size: 1em;
+}
+
+#results {
+  display:none;
+}
+
+input[type="reset"] {
+  background: #8b181b;
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  height: 38px;
+}
+input[type="reset"]:hover {
+  background: #aa1e21;
+  cursor: pointer;
+}
