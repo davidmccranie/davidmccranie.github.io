@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GA Hartman</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hartmanScript.js">
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li>Florida</li>
+            </a>
+            <a href="hartman.html">
+                <li>Georgia</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h2>GA Hartman Calculator</h2>
+
+        <form class="" onsubmit="return calculateHartman()">
+            <fieldset>
+                <legend>Settlement Information</legend>
+                <label for="settlementAmount">Gross:&nbsp;$</label>
+                <input type="text" id="settlementAmount" autofocus placeholder="no $ signs or commas" required autocomplete="off">
+
+                <br>
+
+                <p>
+                    <label for="costs"></label> Costs:&nbsp;$<input type="text" name="" value="" id="costs" autocomplete="off" placeholder="no $ signs or commas" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Claimant Information</legend>
+                <label for="dob">Date of Birth:</label>
+                <input type="text" name="dob" value="" id="dob" placeholder="dd/mm/yyyy" required autocomplete="off">
+
+                <p>
+                    <label>
+      <input type="radio" name="gender" value="male" id="male" required>
+      Male</label>
+                    <br>
+                    <label>
+      <input type="radio" name="gender" value="female" id="female">
+      Female</label>
+                    <br>
+                </p>
+
+            </fieldset>
+
+            <fieldset id="results">
+                <legend>Results</legend>
+                <p>The amount of the attorney's fee is: <span id="amountOfFee"></span></p>
+                <p>The net settlement to the Claimant is: <span id="netSettlement"></span></p>
+                <p>Claimant's current age (years): <span id="age"></span></p>
+                <p>Claimant's life expectancy (years): <span id="leYears"></span></p>
+                <p>Claimant's life expectancy (months): <span id="leMonths"></span></p>
+                <p>Claimant's life expectancy (weeks): <span id="leWeeks"></span></p>
+                <p>Pro-rated net settlement (per month): <span id="netSettlementPerMonth"></span></p>
+                <p>Pro-rated net settlement (per week): <span id="netSettlementPerWeek"></span></p>
+                <p>Hartman language:</p>
+                <p class="hartman">The aforesaid $<span id="settlementAmountHartman">_____</span> allocated to be paid to the Employee/Claimant, shall be paid without commutation of interest and shall be considered, upon approval of this Stipulation and Agreement by the
+                    Workers’ Compensation Board, as already accrued weekly indemnity for the purpose of prompt payment under O.C.G.A. § 34-9-221. However, the net amount of $<span id="netSettlementHartman">_____</span> shall actually represent a negotiated
+                    compromise agreement that the Employee/Claimant’s life expectancy is <span id="leYearsHartman">_____</span> years; <span id="leMonthsHartman">_____</span> months; <span id="leWeeksHartman">_____</span> weeks; (DOB: <span id="dobHartman">_____</span>),
+                    in accordance with the United States Life Table for 2010, and that the settlement herein reached represents a payment of $<span id="proRatedSettlementWeeksHartman"> </span> per week, $<span id="proRatedSettlementMonthsHartman"> </span>                    per month, over the remainder of the Employee/Claimant’s life expectancy in the future.</p>
+
+            </fieldset>
+
+
+            <p><button>Calculate Hartman</button>
+                <input type="reset" id="reset" onclick="closeResults()">
+            </p>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
