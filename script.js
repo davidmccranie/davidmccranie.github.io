@@ -7,13 +7,6 @@ function calculateSettlement() {
     var settlementAmount = document.getElementById('settlementAmount').value;
     var costsAmount = document.getElementById('costs').value;
     var feeAmount;
-/* remove required attribute for claimant-paid and ec-paid costs where 
-costsAmount == "";
-*/
-    if (costsAmount == "") {
-  document.getElementById("claimant-paid").removeAttr('required');
-  document.getElementById("ec-paid").removeAttr('required');
-}
     
     /*
     calculate fee amount based on value of
