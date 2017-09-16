@@ -48,6 +48,9 @@ input {
     font-family: Roboto;
     font-size: 1em;
 }
+input::placeholder {
+  color: #ddd;
+}
 
 #results {
   display:none;
